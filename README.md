@@ -1,4 +1,4 @@
-# Hostinger Promo Code 2026 ✅ Up to 83% OFF + Free Domain (Verified Coupon)
+# Hostinger Promo Code June 2026 ✅ Up to 83% OFF + Free Domain (Verified Coupon)
 
 [![Hostinger Coupon – Up to 83% Off Web Hosting](assets/pricing-banner.svg)](https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4)
 
