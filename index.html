@@ -68,6 +68,13 @@
     .deal{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:12px;padding:16px 20px;margin:14px 0}
     .deal h2{margin-top:0;font-size:19px}
     .deal .price{color:var(--accent2);font-weight:700}
+    .deal-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px}
+    .deal-code{display:inline-flex;align-items:center;gap:8px;background:#0f0d22;border:1px dashed var(--accent2);border-radius:8px;padding:6px 12px;font-weight:800;letter-spacing:1px;color:var(--accent2);font-size:14px}
+    .btn-copy{background:#2a2547;color:#fff;border:0;border-radius:7px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;transition:background .15s}
+    .btn-copy:hover{background:#3a3460}
+    .btn-copy.copied{background:var(--accent2);color:#04221a}
+    .btn-claim{background:var(--accent);color:#fff;text-decoration:none;border-radius:7px;padding:8px 18px;font-size:14px;font-weight:700;transition:background .15s}
+    .btn-claim:hover{background:#7c4dff;color:#fff}
 
     table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:12px;overflow:hidden;font-size:15px}
     th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
@@ -296,21 +303,60 @@
 </div>
 
 <script>
-  function copyCoupon(){
-    var code = document.getElementById('couponCode').innerText.trim();
-    var btn = document.getElementById('copyBtn');
-    navigator.clipboard.writeText(code).then(function(){
-      btn.innerText = 'Copied!';
-      btn.classList.add('copied');
-      setTimeout(function(){ btn.innerText = 'Copy'; btn.classList.remove('copied'); }, 1800);
-    }).catch(function(){
+  var COUPON = 'BBEGREENPGE4';
+  var REF_LINK = 'https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4';
+
+  function copyText(code, btn){
+    function done(){
+      var old = btn.innerText;
+      btn.innerText = 'Copied!'; btn.classList.add('copied');
+      setTimeout(function(){ btn.innerText = old; btn.classList.remove('copied'); }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(code).then(done).catch(fallback);
+    } else { fallback(); }
+    function fallback(){
       var t = document.createElement('textarea');
       t.value = code; document.body.appendChild(t); t.select();
-      document.execCommand('copy'); document.body.removeChild(t);
-      btn.innerText = 'Copied!'; btn.classList.add('copied');
-      setTimeout(function(){ btn.innerText = 'Copy'; btn.classList.remove('copied'); }, 1800);
-    });
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(t); done();
+    }
   }
+
+  // Hero copy button
+  function copyCoupon(){
+    copyText(document.getElementById('couponCode').innerText.trim(), document.getElementById('copyBtn'));
+  }
+
+  // Add Claim + Copy code to every deal card
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.deal').forEach(function(card){
+      var row = document.createElement('div');
+      row.className = 'deal-actions';
+
+      var codeBox = document.createElement('span');
+      codeBox.className = 'deal-code';
+      codeBox.textContent = COUPON;
+
+      var copyBtn = document.createElement('button');
+      copyBtn.className = 'btn-copy';
+      copyBtn.type = 'button';
+      copyBtn.textContent = 'Copy code';
+      copyBtn.addEventListener('click', function(){ copyText(COUPON, copyBtn); });
+
+      var claim = document.createElement('a');
+      claim.className = 'btn-claim';
+      claim.href = REF_LINK;
+      claim.target = '_blank';
+      claim.rel = 'noopener';
+      claim.textContent = 'Claim Deal →';
+
+      row.appendChild(codeBox);
+      row.appendChild(copyBtn);
+      row.appendChild(claim);
+      card.appendChild(row);
+    });
+  });
 </script>
 </body>
 </html>
