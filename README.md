@@ -1,7 +1,16 @@
-# Hostinger Promo Code (June 2026) – Verified 20% Off + 79% Hosting Discount
+# Hostinger Promo Code 2026 ✅ Up to 83% OFF + Free Domain (Verified Coupon)
 
-> 👉 **[Claim Your Hostinger Discount — 20% Off + Free Domain](https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4)**
-> Referral Code: **`BBEGREENPGE4`** — applies automatically at checkout.
+[![Hostinger Coupon – Up to 83% Off Web Hosting](assets/pricing-banner.svg)](https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4)
+
+> 👉 **[Claim Your Hostinger Discount — Up to 83% Off + Free Domain](https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4)**
+
+**Copy your coupon code** (click the icon on the right to copy 👇):
+
+```
+BBEGREENPGE4
+```
+
+The code applies automatically through the link above — no manual typing needed.
 
 A **Hostinger promo code** is a discount link or code that lowers the price of Hostinger web hosting, Website Builder, and VPS hosting plans at checkout. The verified referral link above applies an extra **20% off** on top of existing plan discounts, adds a **free domain**, includes a **free SSL certificate**, and keeps a **30-day money-back guarantee**.
 

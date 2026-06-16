@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hostinger Promo Code (June 2026) – Verified 20% Off + 79% Hosting Discount</title>
+  <title>Hostinger Promo Code 2026 ✅ Up to 83% OFF + Free Domain (Verified Coupon)</title>
   <meta name="description" content="Use the latest Hostinger promo code to get up to 20% off on top of plan discounts, a free domain, free SSL, and a 30-day money-back guarantee. Verified Hostinger coupon codes for June 2026." />
   <meta name="keywords" content="hostinger promo code, hostinger coupon code, hostinger discount code, hostinger deals, hostinger coupon 2026, free domain hosting, hostinger promo code 2026" />
   <link rel="canonical" href="https://rankandrent.github.io/hostinger-coupon/" />
@@ -55,7 +55,12 @@
 
     .code-box{background:var(--card);border:2px dashed var(--accent2);border-radius:14px;padding:18px;text-align:center;max-width:340px;margin:24px auto}
     .code-box .label{color:var(--muted);font-size:13px}
-    .code-box .code{font-size:25px;font-weight:800;letter-spacing:2px;color:var(--accent2);margin:6px 0}
+    .code-box .code{font-size:25px;font-weight:800;letter-spacing:2px;color:var(--accent2)}
+    .code-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0}
+    .copy-btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:8px 16px;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s}
+    .copy-btn:hover{background:#7c4dff}
+    .copy-btn.copied{background:var(--accent2);color:#04221a}
+    .banner{width:100%;max-width:720px;height:auto;border-radius:14px;margin-bottom:8px}
 
     .deal{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:12px;padding:16px 20px;margin:14px 0}
     .deal h2{margin-top:0;font-size:19px}
@@ -83,15 +88,21 @@
 
   <!-- ============ HERO ============ -->
   <header class="hero">
+    <a href="https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4" target="_blank" rel="noopener">
+      <img src="assets/pricing-banner.svg" alt="Hostinger Coupon – Up to 83% Off Web Hosting" class="banner" />
+    </a>
     <div class="badge">✅ Verified · June 2026</div>
-    <h1>Hostinger Promo Code<br><span>20% Off + 79% Hosting Discount</span></h1>
+    <h1>Hostinger Promo Code 2026<br><span>Up to 83% Off + Free Domain</span></h1>
     <p class="lead">A Hostinger promo code is a discount link or code that lowers the price of Hostinger web hosting, Website Builder, and VPS hosting plans at checkout. The verified referral link below applies an extra 20% off on top of existing plan discounts, adds a free domain, includes a free SSL certificate, and keeps a 30-day money-back guarantee.</p>
     <a class="cta" href="https://www.hostinger.com/pk?REFERRALCODE=BBEGREENPGE4" target="_blank" rel="noopener">🚀 Claim Your Hostinger Discount</a>
     <p class="small">The discount applies automatically. No code typing needed.</p>
     <div class="code-box">
       <div class="label">Referral Code</div>
-      <div class="code">BBEGREENPGE4</div>
-      <div class="small">Apply at checkout for the extra 20% off</div>
+      <div class="code-row">
+        <span class="code" id="couponCode">BBEGREENPGE4</span>
+        <button class="copy-btn" id="copyBtn" onclick="copyCoupon()">Copy</button>
+      </div>
+      <div class="small">Apply at checkout for the extra discount</div>
     </div>
   </header>
 
@@ -280,5 +291,23 @@
   </footer>
 
 </div>
+
+<script>
+  function copyCoupon(){
+    var code = document.getElementById('couponCode').innerText.trim();
+    var btn = document.getElementById('copyBtn');
+    navigator.clipboard.writeText(code).then(function(){
+      btn.innerText = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.innerText = 'Copy'; btn.classList.remove('copied'); }, 1800);
+    }).catch(function(){
+      var t = document.createElement('textarea');
+      t.value = code; document.body.appendChild(t); t.select();
+      document.execCommand('copy'); document.body.removeChild(t);
+      btn.innerText = 'Copied!'; btn.classList.add('copied');
+      setTimeout(function(){ btn.innerText = 'Copy'; btn.classList.remove('copied'); }, 1800);
+    });
+  }
+</script>
 </body>
 </html>

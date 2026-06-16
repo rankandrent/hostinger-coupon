@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d1a3c"/>
+      <stop offset="1" stop-color="#0b0a1f"/>
+    </linearGradient>
+    <linearGradient id="pop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#673de6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="560" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="500" y="62" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle">Hostinger Web Hosting</text>
+  <text x="500" y="98" fill="#00d4a0" font-size="20" font-weight="700" text-anchor="middle">Up to 83% OFF + Free Domain · Code: BBEGREENPGE4</text>
+
+  <!-- trust row -->
+  <text x="500" y="132" fill="#a9a6c9" font-size="15" text-anchor="middle">🛡 30-day money-back   ·   🎧 24/7 support   ·   🔒 Free SSL   ·   ⚡ NVMe storage</text>
+
+  <!-- Premium card -->
+  <g>
+    <rect x="60" y="165" width="270" height="350" rx="16" fill="#16142b" stroke="rgba(255,255,255,.08)"/>
+    <rect x="250" y="182" width="64" height="26" rx="13" fill="#2a2547"/>
+    <text x="282" y="200" fill="#00d4a0" font-size="13" font-weight="700" text-anchor="middle">80% off</text>
+    <text x="84" y="210" fill="#ffffff" font-size="23" font-weight="800">Premium</text>
+    <text x="84" y="236" fill="#a9a6c9" font-size="13">Everything you need to start</text>
+    <text x="84" y="290" fill="#6f6b95" font-size="16" text-decoration="line-through">$11.99</text>
+    <text x="84" y="324" fill="#ffffff" font-size="38" font-weight="800">$2.39</text>
+    <text x="205" y="324" fill="#a9a6c9" font-size="15">/mo</text>
+    <text x="84" y="362" fill="#d9d7ef" font-size="13">• 3 websites · 20 GB SSD</text>
+    <text x="84" y="386" fill="#d9d7ef" font-size="13">• Free domain (1 year)</text>
+    <text x="84" y="410" fill="#d9d7ef" font-size="13">• Free SSL + email</text>
+    <rect x="84" y="445" width="222" height="44" rx="10" fill="none" stroke="#673de6" stroke-width="2"/>
+    <text x="195" y="473" fill="#b9a6ff" font-size="16" font-weight="700" text-anchor="middle">Choose plan</text>
+  </g>
+
+  <!-- Business card (popular) -->
+  <g>
+    <rect x="365" y="150" width="270" height="365" rx="16" fill="#16142b" stroke="#673de6" stroke-width="2"/>
+    <rect x="365" y="150" width="270" height="34" rx="16" fill="url(#pop)"/>
+    <text x="500" y="173" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="1">MOST POPULAR</text>
+    <rect x="555" y="200" width="64" height="26" rx="13" fill="#2a2547"/>
+    <text x="587" y="218" fill="#00d4a0" font-size="13" font-weight="700" text-anchor="middle">83% off</text>
+    <text x="389" y="228" fill="#ffffff" font-size="23" font-weight="800">Business</text>
+    <text x="389" y="254" fill="#a9a6c9" font-size="13">More tools and power</text>
+    <text x="389" y="304" fill="#6f6b95" font-size="16" text-decoration="line-through">$18.99</text>
+    <text x="389" y="338" fill="#ffffff" font-size="38" font-weight="800">$3.19</text>
+    <text x="510" y="338" fill="#a9a6c9" font-size="15">/mo</text>
+    <text x="389" y="374" fill="#d9d7ef" font-size="13">• 50 websites · 50 GB NVMe</text>
+    <text x="389" y="398" fill="#d9d7ef" font-size="13">• Daily backups · free CDN</text>
+    <text x="389" y="422" fill="#d9d7ef" font-size="13">• AI Agent for WordPress</text>
+    <rect x="389" y="455" width="222" height="44" rx="10" fill="url(#pop)"/>
+    <text x="500" y="483" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">Choose plan</text>
+  </g>
+
+  <!-- Cloud card -->
+  <g>
+    <rect x="670" y="165" width="270" height="350" rx="16" fill="#16142b" stroke="rgba(255,255,255,.08)"/>
+    <rect x="860" y="182" width="64" height="26" rx="13" fill="#2a2547"/>
+    <text x="892" y="200" fill="#00d4a0" font-size="13" font-weight="700" text-anchor="middle">77% off</text>
+    <text x="694" y="210" fill="#ffffff" font-size="23" font-weight="800">Cloud Startup</text>
+    <text x="694" y="236" fill="#a9a6c9" font-size="13">20X more power, Cloud</text>
+    <text x="694" y="290" fill="#6f6b95" font-size="16" text-decoration="line-through">$27.99</text>
+    <text x="694" y="324" fill="#ffffff" font-size="38" font-weight="800">$6.39</text>
+    <text x="815" y="324" fill="#a9a6c9" font-size="15">/mo</text>
+    <text x="694" y="362" fill="#d9d7ef" font-size="13">• 100 websites · 100 GB</text>
+    <text x="694" y="386" fill="#d9d7ef" font-size="13">• Dedicated IP · 4 GB RAM</text>
+    <text x="694" y="410" fill="#d9d7ef" font-size="13">• Priority 24/7 support</text>
+    <rect x="694" y="445" width="222" height="44" rx="10" fill="none" stroke="#673de6" stroke-width="2"/>
+    <text x="805" y="473" fill="#b9a6ff" font-size="16" font-weight="700" text-anchor="middle">Choose plan</text>
+  </g>
+
+  <text x="500" y="540" fill="#6f6b95" font-size="13" text-anchor="middle">Prices for 48-month billing with coupon applied · renews at standard rate</text>
+</svg>
